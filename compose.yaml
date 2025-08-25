@@ -11,4 +11,5 @@ services:
       - "8081:80"
     volumes:
       - ${AZVOL_PATH}:/app/settings
+      - ${AZVOL_KEYS_PATH}:/root/.aspnet/DataProtection-Keys 
     restart: unless-stopped
