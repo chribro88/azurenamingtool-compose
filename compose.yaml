@@ -1,0 +1,13 @@
+services:
+  azurenamingtool:
+    build:
+      context: https://github.com/mspnp/AzureNamingTool.git#main:src
+      dockerfile: Dockerfile
+    ports:
+      - "8081:80"
+    volumes:
+      - azurenamingtoolvol:/app/settings
+    restart: unless-stopped
+
+volumes:
+  azurenamingtoolvol:
