@@ -3,6 +3,7 @@ services:
     build:
       context: https://github.com/mspnp/AzureNamingTool.git#main:src
       dockerfile: Dockerfile
+    image: tfisicaro/aznamingtool
     ports:
       - "8081:80"
     volumes:
