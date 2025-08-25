@@ -6,8 +6,5 @@ services:
     ports:
       - "8081:80"
     volumes:
-      - azurenamingtoolvol:/app/settings
+      - ${AZVOL_PATH}:/app/settings
     restart: unless-stopped
-
-volumes:
-  azurenamingtoolvol:
